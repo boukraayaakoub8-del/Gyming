@@ -1,0 +1,12 @@
+import streamlit as st
+
+st.title("💪 برنامج كمال الأجسام")
+
+weight = st.number_input("وزنك")
+goal = st.selectbox("هدفك", ["زيادة عضلات", "تنشيف"])
+
+if st.button("اعطيني برنامج"):
+    if goal == "زيادة عضلات":
+        st.success("💪 برنامج: صدر + ظهر + أرجل (3 أيام)")
+    else:
+        st.success("🔥 برنامج: Full Body (4 أيام)")
